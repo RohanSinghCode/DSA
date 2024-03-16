@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
-    private static ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
     public static void main(String[] args) {
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
         ArrayList<Integer> input = new ArrayList<>();
         input.add(1);
         input.add(2);
@@ -11,24 +10,8 @@ public class Main {
         input.add(4);
         input.add(5);
         ans.add(input);
-        sumTriangle(input);
+        SumTriangle class1 = new SumTriangle();
+        class1.sumTriangle(input, ans);
         System.out.println(ans);
-    }
-
-
-    static void sumTriangle(ArrayList<Integer> arr)
-    {
-        if (arr.size() == 1)
-        {
-            return;
-        }
-        ArrayList<Integer> newArray = new ArrayList<>();
-        for(int i=0;i< arr.size()-1; i++)
-        {
-            int sum = arr.get(i) + arr.get(i+1);
-            newArray.add(sum);
-        }
-        ans.add(newArray);
-        sumTriangle(newArray);
     }
 }
