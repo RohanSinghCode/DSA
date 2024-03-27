@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Recurssion.iml" filepath="$PROJECT_DIR$/Recurssion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Subsequence/Subsequence.iml" filepath="$PROJECT_DIR$/Subsequence/Subsequence.iml" />
     </modules>
   </component>
 </project>
